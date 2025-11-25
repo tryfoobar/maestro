@@ -1,0 +1,18 @@
+appId: app.runnr.android
+tags:
+  - andriod
+---
+- launchApp:
+    clearState: true
+
+
+
+
+
+
+
+
+
+    
+
+

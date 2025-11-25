@@ -1,0 +1,4 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
