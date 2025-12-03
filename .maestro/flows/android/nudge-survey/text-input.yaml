@@ -1,0 +1,23 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-survey-form"
+- tapOn: Show Guide/Survey
+
+- assertVisible: Long answer
+- assertVisible: Long answer placeholder
+
+- tapOn: Share Feedback
+
+- assertVisible: Short answer
+- assertVisible: Short answer placeholder
+
+- tapOn: Submit

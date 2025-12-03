@@ -2,3 +2,5 @@ appId: app.runnr.android
 ---
 - launchApp:
     clearState: true
+- tapOn:
+    point: 0%,25%

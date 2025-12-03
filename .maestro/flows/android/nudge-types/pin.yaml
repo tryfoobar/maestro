@@ -1,0 +1,19 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-pin"
+- tapOn: Show Guide/Survey
+
+# Assert
+- assertVisible: Pin Nudge
+
+- tapOn: Close
+- assertNotVisible: Pin Nudge

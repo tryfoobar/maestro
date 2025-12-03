@@ -1,0 +1,20 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-banner"
+- tapOn: Show Guide/Survey
+
+# Assert
+- assertVisible: This is a working top banner!
+
+# Check if close is working
+- tapOn: Close
+- assertNotVisible: This is a working top banner!

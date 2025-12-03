@@ -1,0 +1,18 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- tapOn: Tooltip Marker
+
+# Assert
+- assertVisible: Tooltip nudge
+
+# Check if close is working
+- tapOn: Close
+- assertNotVisible: Tooltip nudge
