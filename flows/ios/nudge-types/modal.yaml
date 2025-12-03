@@ -1,0 +1,21 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-modal-b67"
+- tapOn: Show Guide/Survey
+
+# Assert
+- assertVisible: This is a modal nudge
+- assertVisible: Hello this is a sample content for modal nudge
+
+# Check if close is working
+- tapOn: Close
+- assertNotVisible: This is a modal nudge
