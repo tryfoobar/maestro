@@ -1,0 +1,18 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-video"
+- tapOn: Show Guide/Survey
+
+- assertVisible: YouTube Home
+
+- tapOn: Close
+- assertNotVisible: YouTube Home

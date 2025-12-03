@@ -1,0 +1,18 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "ssurvey-e2e-image-fc2"
+- tapOn: Show Guide/Survey
+
+- assertVisible: shrek-shrek-rizz.gif
+
+- tapOn: Close
+- assertNotVisible: shrek-shrek-rizz.gif
