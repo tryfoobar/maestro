@@ -1,4 +1,4 @@
-appId: app.runnr.android
+appId: com.app.RunnrHost
 ---
 - launchApp:
     clearState: true
@@ -8,14 +8,16 @@ appId: app.runnr.android
 - doubleTapOn: Reboot SDK
 
 # Nudge Trigger
-- doubleTapOn: Guide/Survey Flag Key
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
 - inputText: "guide-e2e-popover-0e8"
 - tapOn: Show Guide/Survey
 
 # Assert
 - assertVisible: This is a popover nudge
 - assertVisible: Sample content from a popover nudge
-
 
 - tapOn: Close
 - assertNotVisible: This is a popover nudge
