@@ -16,7 +16,8 @@ appId: com.app.RunnrHost
 - tapOn: Show Guide/Survey
 
 - assertVisible: Stars
-- assertVisible: Star rating
+- assertVisible:
+    id: star
 
 - tapOn: Share Feedback
 

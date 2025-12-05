@@ -15,6 +15,7 @@ appId: com.app.RunnrHost
 - inputText: "survey-e2e-image-fc2"
 - tapOn: Show Guide/Survey
 
+# in iOS image has no identifier
 - assertVisible: shrek-shrek-rizz.gif
 
 - tapOn: Close
