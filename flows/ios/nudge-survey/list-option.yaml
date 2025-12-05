@@ -22,5 +22,5 @@ appId: com.app.RunnrHost
 
 - tapOn: Continue
 
-- assertVisible: Select an option
+- assertVisible: Select...
 - tapOn: Submit

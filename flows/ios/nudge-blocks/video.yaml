@@ -15,7 +15,7 @@ appId: com.app.RunnrHost
 - inputText: "survey-e2e-video"
 - tapOn: Show Guide/Survey
 
-- assertVisible: YouTube Home
+- assertVisible: Play video
 
 - tapOn: Close
 - assertNotVisible: YouTube Home
