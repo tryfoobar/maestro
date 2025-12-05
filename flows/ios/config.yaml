@@ -1,0 +1,4 @@
+appId: com.app.RunnrHost
+
+flows:
+  - "**/*.yaml"
