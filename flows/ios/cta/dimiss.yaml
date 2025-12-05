@@ -1,0 +1,21 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-cta-dismiss"
+- tapOn: Show Guide/Survey
+
+- assertVisible: CTA Dismiss
+- tapOn: Click here to dismiss
+
+- assertNotVisible: CTA Dismiss

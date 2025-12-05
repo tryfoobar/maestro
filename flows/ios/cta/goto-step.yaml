@@ -1,0 +1,25 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-go-to-step"
+- tapOn: Show Guide/Survey
+
+- assertVisible: Step 1
+- tapOn: Proceed
+
+- assertVisible: Step 3
+- tapOn: Proceed
+
+- assertVisible: Step 2
+- tapOn: Close
