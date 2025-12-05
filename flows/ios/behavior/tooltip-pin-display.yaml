@@ -1,0 +1,29 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+
+- tapOn: info
+
+# Assert
+- assertVisible: Tooltip nudge
+
+- tapOn: Explore
+- assertNotVisible: Tooltip nudge
+
+- tapOn: Today
+- tapOn: info
+- assertVisible: Tooltip nudge
+
+# Check if close is working
+- tapOn: Close
+- assertNotVisible: Tooltip nudge

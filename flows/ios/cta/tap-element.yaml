@@ -1,0 +1,21 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-tap-element"
+- tapOn: Show Guide/Survey
+
+# in iOS image has no identifier
+- assertVisible: Tap Element CTA
+- tapOn: Done
+- assertVisible: Featured Collection
