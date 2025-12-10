@@ -11,7 +11,9 @@ appId: com.app.RunnrHost
 - scrollUntilVisible:
     direction: UP
     element: Event Name
-- tapOn: Guide/Survey Flag Key
+- tapOn:
+    text: Guide/Survey Flag Key
+    retryTapIfNoChange: false
 - inputText: "guide-e2e-forward-back"
 - tapOn: Show Guide/Survey
 
