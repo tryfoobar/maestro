@@ -7,6 +7,10 @@ appId: app.runnr.android
     element: Reboot SDK
 - doubleTapOn: Reboot SDK
 
+- extendedWaitUntil:
+    visible:
+      text: Tooltip Marker
+    timeout: 10000
 # Nudge Trigger
 - doubleTapOn: Guide/Survey Flag Key
 - inputText: "guide-e2e-popover"
