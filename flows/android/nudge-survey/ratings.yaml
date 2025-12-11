@@ -1,0 +1,45 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-ratings"
+- tapOn: Show Guide/Survey
+
+- assertVisible: Stars
+- assertVisible: Star rating
+
+- tapOn: Share Feedback
+
+- assertVisible: Numbers
+- assertVisible: "1"
+- assertVisible: "2"
+- assertVisible: "3"
+- assertVisible: "4"
+- assertVisible: "5"
+- tapOn: Continue
+
+- assertVisible: Emojis
+- assertVisible: 🙁
+- assertVisible: 🙂
+- assertVisible: 🤩
+- tapOn: Continue
+
+- assertVisible: NPS
+- assertVisible: "1"
+- assertVisible: "2"
+- assertVisible: "3"
+- assertVisible: "4"
+- assertVisible: "5"
+- assertVisible: "6"
+- assertVisible: "7"
+- assertVisible: "8"
+- assertVisible: "9"
+- assertVisible: "10"
+- tapOn: Submit

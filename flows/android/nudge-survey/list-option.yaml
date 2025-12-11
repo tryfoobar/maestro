@@ -1,0 +1,23 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-list-option"
+- tapOn: Show Guide/Survey
+
+- assertVisible: List menu
+- assertVisible: Option 1
+- assertVisible: Option 2
+- assertVisible: Option 3
+
+- tapOn: Continue
+
+- assertVisible: Select an option
+- tapOn: Submit
