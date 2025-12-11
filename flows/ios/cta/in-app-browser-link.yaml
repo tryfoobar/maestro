@@ -1,0 +1,21 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-in-app-browser"
+- tapOn: Show Guide/Survey
+
+# in iOS image has no identifier
+- assertVisible: Proceed to Google
+- tapOn: Proceed to Google
+- assertVisible: In-App Browser Open

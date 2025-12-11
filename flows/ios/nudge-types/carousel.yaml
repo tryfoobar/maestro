@@ -1,0 +1,39 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-carousel-ad5"
+- tapOn: Show Guide/Survey
+
+# Check if nudge appears
+- assertVisible: Hello! This is a working carousel!
+
+# Check Swipe left
+- swipe:
+    direction: LEFT
+- assertVisible: Carousel Step 2
+
+# Check CTA Button behavior
+- tapOn: Continue
+- assertVisible: Carousel Step 3
+
+# Check Swipe right
+- swipe:
+    direction: RIGHT
+- assertVisible: Carousel Step 2
+
+# Check CTA Button behavior
+- tapOn: Back
+- assertVisible: Hello! This is a working carousel!
+
+- tapOn: Close
+- assertNotVisible: Hello! This is a working carousel!

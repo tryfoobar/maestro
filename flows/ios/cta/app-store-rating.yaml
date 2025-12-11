@@ -1,0 +1,22 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-app-store-rating"
+- tapOn: Show Guide/Survey
+
+# in iOS image has no identifier
+- assertVisible: App Store Rating
+- tapOn: Done
+- assertVisible: Tap a star to rate it on the App Store.
+- tapOn: Not Now

@@ -1,0 +1,22 @@
+appId: com.app.RunnrHost
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- doubleTapOn: Reboot SDK
+
+# Nudge Trigger
+- scrollUntilVisible:
+    direction: UP
+    element: Event Name
+- tapOn: Guide/Survey Flag Key
+- inputText: "survey-e2e-image-fc2"
+- tapOn: Show Guide/Survey
+
+# in iOS image has no identifier
+- assertVisible: shrek-shrek-rizz.gif
+
+- tapOn: Close
+- assertNotVisible: shrek-shrek-rizz.gif
