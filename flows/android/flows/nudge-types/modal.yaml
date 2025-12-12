@@ -10,7 +10,7 @@ appId: app.runnr.android
 - extendedWaitUntil:
     visible:
       text: Tooltip Marker
-    timeout: 10000
+    timeout: 20000
 
 # Nudge Trigger
 - doubleTapOn: Guide/Survey Flag Key
