@@ -6,6 +6,7 @@ tags:
     clearState: true
 - scrollUntilVisible:
     element: Reboot SDK
+- tapOn: 🎲 Generate Random User ID
 - doubleTapOn: Reboot SDK
 
 - extendedWaitUntil:
