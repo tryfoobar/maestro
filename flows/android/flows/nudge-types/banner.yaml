@@ -16,6 +16,7 @@ appId: app.runnr.android
 # Nudge Trigger
 - doubleTapOn: Guide/Survey Flag Key
 - inputText: "guide-e2e-banner"
+- hideKeyboard
 - tapOn: Show Guide/Survey
 
 # Assert

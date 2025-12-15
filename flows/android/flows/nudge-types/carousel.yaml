@@ -17,6 +17,7 @@ tags:
 # Nudge Trigger
 - doubleTapOn: Guide/Survey Flag Key
 - inputText: "guide-e2e-carousel"
+- hideKeyboard
 - tapOn: Show Guide/Survey
 
 # Check if nudge appears
