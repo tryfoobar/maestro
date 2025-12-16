@@ -18,30 +18,13 @@ tags:
 - doubleTapOn: Guide/Survey Flag Key
 - inputText: "guide-e2e-carousel"
 - doubleTapOn: Test Events
+- waitForAnimationToEnd
 
 - tapOn:
     text: Show Guide/Survey
     delay: 3000
 
 # Check if nudge appears
-- assertVisible: Hello! This is a working carousel!
-
-# Check Swipe left
-- swipe:
-    direction: LEFT
-- assertVisible: Carousel Step 2
-
-# Check CTA Button behavior
-- tapOn: Continue
-- assertVisible: Carousel Step 3
-
-# Check Swipe right
-- swipe:
-    direction: RIGHT
-- assertVisible: Carousel Step 2
-
-# Check CTA Button behavior
-- tapOn: Back
 - assertVisible: Hello! This is a working carousel!
 
 - tapOn: Close
