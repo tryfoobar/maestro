@@ -17,8 +17,11 @@ tags:
 # Nudge Trigger
 - doubleTapOn: Guide/Survey Flag Key
 - inputText: "guide-e2e-carousel"
-- hideKeyboard
-- tapOn: Show Guide/Survey
+- tapOn: Test Events
+
+- tapOn:
+    text: Show Guide/Survey
+    delay: 1000
 
 # Check if nudge appears
 - assertVisible: Hello! This is a working carousel!
