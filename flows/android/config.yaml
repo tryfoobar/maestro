@@ -1,4 +1,4 @@
-appId: com.app.RunnrHost
+appId: app.runnr.android
 
 flows:
   - "**/*.yaml"
