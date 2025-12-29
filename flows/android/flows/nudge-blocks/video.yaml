@@ -20,8 +20,8 @@ appId: app.runnr.android
 
 - extendedWaitUntil:
     visible:
-      text: YouTube Home
+      text: Open App
     timeout: 20000
 
 - tapOn: Close
-- assertNotVisible: YouTube Home
+- assertNotVisible: Open App
