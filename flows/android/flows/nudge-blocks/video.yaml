@@ -19,7 +19,7 @@ appId: app.runnr.android
 - inputText: "survey-e2e-image-597"
 - tapOn: Show Guide/Survey
 
-- assertVisible: YouTube Home
+- assertVisible: Open App
 
 - tapOn: Close
-- assertNotVisible: YouTube Home
+- assertNotVisible: Open App
