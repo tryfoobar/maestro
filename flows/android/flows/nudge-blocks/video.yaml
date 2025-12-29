@@ -8,7 +8,6 @@ appId: app.runnr.android
 - tapOn: 🎲 Generate Random User ID
 - doubleTapOn: Reboot SDK
 
-
 - extendedWaitUntil:
     visible:
       text: Tooltip Marker
@@ -19,7 +18,10 @@ appId: app.runnr.android
 - inputText: "survey-e2e-image-597"
 - tapOn: Show Guide/Survey
 
-- assertVisible: Open App
+- extendedWaitUntil:
+    visible:
+      text: YouTube Home
+    timeout: 20000
 
 - tapOn: Close
-- assertNotVisible: Open App
+- assertNotVisible: YouTube Home
