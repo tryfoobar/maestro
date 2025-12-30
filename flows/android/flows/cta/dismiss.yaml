@@ -1,0 +1,25 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- tapOn: 🎲 Generate Random User ID
+- doubleTapOn: Reboot SDK
+
+- extendedWaitUntil:
+    visible:
+      text: Tooltip Marker
+    timeout: 20000
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-cta-dismiss-c7e"
+- tapOn: Show Guide/Survey
+
+- assertVisible: CTA Dismiss
+- tapOn: Click here to dismiss
+
+- assertNotVisible: CTA Dismiss
+

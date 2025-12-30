@@ -1,0 +1,25 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- tapOn: 🎲 Generate Random User ID
+- doubleTapOn: Reboot SDK
+
+- extendedWaitUntil:
+    visible:
+      text: Tooltip Marker
+    timeout: 20000
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-cta-complete"
+- tapOn: Show Guide/Survey
+
+- assertVisible: CTA Complete
+- tapOn: Click here to complete
+
+- assertNotVisible: CTA Complete
+

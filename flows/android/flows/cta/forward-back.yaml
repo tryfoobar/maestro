@@ -1,0 +1,28 @@
+appId: app.runnr.android
+---
+- launchApp:
+    clearState: true
+
+- scrollUntilVisible:
+    element: Reboot SDK
+- tapOn: 🎲 Generate Random User ID
+- doubleTapOn: Reboot SDK
+
+- extendedWaitUntil:
+    visible:
+      text: Tooltip Marker
+    timeout: 20000
+
+# Nudge Trigger
+- doubleTapOn: Guide/Survey Flag Key
+- inputText: "guide-e2e-forward-back-ca4"
+- tapOn: Show Guide/Survey
+
+- assertVisible: Welcome to step 1
+- tapOn: Continue
+
+- assertVisible: Welcome to step 2
+- tapOn: Go back
+
+- assertVisible: Welcome to step 1
+- tapOn: Close
