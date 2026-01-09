@@ -5,16 +5,28 @@ appId: com.app.RunnrHost
 
 - scrollUntilVisible:
     element: Reboot SDK
+- tapOn: Generate Random User ID
 - doubleTapOn: Reboot SDK
 
 # Nudge Trigger
 - scrollUntilVisible:
     direction: UP
     element: Event Name
+
+- extendedWaitUntil:
+    visible:
+      text: Guide/Survey Flag Key
+    timeout: 20000
+
 - tapOn:
     text: Guide/Survey Flag Key
     retryTapIfNoChange: false
-- inputText: "survey-e2e-show-guide-9cd"
+    repeat: 2
+    delay: 2000
+- runFlow:
+    file: "../input-text.yaml"
+    env:
+      INPUT_TEXT: "survey-e2e-show-guide-9cd"
 - tapOn: Show Guide/Survey
 
 

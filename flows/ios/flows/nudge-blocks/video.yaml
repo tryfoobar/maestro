@@ -5,19 +5,33 @@ appId: com.app.RunnrHost
 
 - scrollUntilVisible:
     element: Reboot SDK
+- tapOn: Generate Random User ID
 - doubleTapOn: Reboot SDK
 
 # Nudge Trigger
 - scrollUntilVisible:
     direction: UP
     element: Event Name
+
+- extendedWaitUntil:
+    visible:
+      text: Guide/Survey Flag Key
+    timeout: 20000
+
 - tapOn:
     text: Guide/Survey Flag Key
     retryTapIfNoChange: false
-- inputText: "survey-e2e-video"
+    repeat: 2
+    delay: 2000
+- runFlow:
+    file: "../input-text.yaml"
+    env:
+      INPUT_TEXT: "survey-e2e-video"
 - tapOn: Show Guide/Survey
 
-- assertVisible: Play video
-
+- extendedWaitUntil:
+    visible:
+      text: Play video
+    timeout: 10000
 - tapOn: Close
-- assertNotVisible: YouTube Home
+- assertNotVisible: Play video

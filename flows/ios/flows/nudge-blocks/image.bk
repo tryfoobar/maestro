@@ -1,3 +1,4 @@
+# Commented out because the image has no identifier in iOS
 appId: com.app.RunnrHost
 ---
 - launchApp:
@@ -5,16 +6,28 @@ appId: com.app.RunnrHost
 
 - scrollUntilVisible:
     element: Reboot SDK
+- tapOn: Generate Random User ID
 - doubleTapOn: Reboot SDK
 
 # Nudge Trigger
 - scrollUntilVisible:
     direction: UP
     element: Event Name
+
+- extendedWaitUntil:
+    visible:
+      text: Guide/Survey Flag Key
+    timeout: 20000
+
 - tapOn:
     text: Guide/Survey Flag Key
     retryTapIfNoChange: false
-- inputText: "survey-e2e-image-fc2"
+    repeat: 2
+    delay: 2000
+- runFlow:
+    file: "../input-text.yaml"
+    env:
+      INPUT_TEXT: "survey-e2e-image-fc2"
 - tapOn: Show Guide/Survey
 
 # in iOS image has no identifier

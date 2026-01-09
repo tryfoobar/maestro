@@ -1,0 +1,13 @@
+# Required env:
+#   INPUT_TEXT
+appId: com.app.RunnrHost
+---
+- evalScript: '${output.inputText = (typeof INPUT_TEXT === "undefined") ? "" : INPUT_TEXT}'
+- evalScript: '${output.counter = 0}'
+- repeat:
+    optional: true
+    while:
+      true: '${output.counter < output.inputText.length}'
+    commands:
+      - inputText: ${output.inputText.charAt(output.counter)}
+      - evalScript: '${output.counter = output.counter + 1}'

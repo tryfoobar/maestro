@@ -1,16 +1,22 @@
 appId: com.app.RunnrHost
 ---
 - launchApp:
-    clearState: true
+    clearState: true      
 
 - scrollUntilVisible:
     element: Reboot SDK
+- tapOn: Generate Random User ID
 - doubleTapOn: Reboot SDK
 
 # Nudge Trigger
 - scrollUntilVisible:
     direction: UP
     element: Event Name
+
+- extendedWaitUntil:
+    visible:
+      text: info
+    timeout: 20000
 
 - tapOn: info
 
