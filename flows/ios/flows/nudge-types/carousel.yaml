@@ -21,11 +21,8 @@ appId: com.app.RunnrHost
     text: Guide/Survey Flag Key
     retryTapIfNoChange: false
     repeat: 2
-    delay: 2000
-- runFlow:
-    file: "../input-text.yaml"
-    env:
-      INPUT_TEXT: "guide-e2e-carousel-ad5"
+    delay: 3000
+- inputText: "guide-e2e-carousel-ad5"
 - tapOn: Show Guide/Survey
 
 # Check if nudge appears

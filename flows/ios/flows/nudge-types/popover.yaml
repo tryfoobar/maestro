@@ -22,11 +22,8 @@ appId: com.app.RunnrHost
     text: Guide/Survey Flag Key
     retryTapIfNoChange: false
     repeat: 2
-    delay: 2000
-- runFlow:
-    file: "../input-text.yaml"
-    env:
-      INPUT_TEXT: "guide-e2e-popover-0e8"
+    delay: 3000
+- inputText: "guide-e2e-popover-0e8"
 - tapOn: Show Guide/Survey
 
 # Assert

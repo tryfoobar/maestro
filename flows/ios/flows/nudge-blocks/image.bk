@@ -23,11 +23,8 @@ appId: com.app.RunnrHost
     text: Guide/Survey Flag Key
     retryTapIfNoChange: false
     repeat: 2
-    delay: 2000
-- runFlow:
-    file: "../input-text.yaml"
-    env:
-      INPUT_TEXT: "survey-e2e-image-fc2"
+    delay: 3000
+- inputText: "survey-e2e-image-fc2"
 - tapOn: Show Guide/Survey
 
 # in iOS image has no identifier
