@@ -14,7 +14,7 @@ appId: com.app.RunnrHost
 
 - extendedWaitUntil:
     visible:
-      text: Guide/Survey Flag Key
+      text: info
     timeout: 20000
 
 - tapOn:
